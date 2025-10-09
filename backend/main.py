@@ -77,6 +77,8 @@ async def fetch_states(country_request: CountryRequest):
     return {"states": states}
 
 
+
+
 @app.post("/districts", tags=["ELK"])
 async def fetch_districts(state_request: StateRequest):
     response = get_district_list(state_request.state_id)
